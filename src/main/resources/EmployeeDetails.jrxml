@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmployeeDetails" language="groovy" pageWidth="595" pageHeight="288" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="6fb8ded2-45a1-483e-9b90-b948317b3342">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+    <field name="empId" class="java.lang.String">
+        <fieldDescription><![CDATA[empid]]></fieldDescription>
+    </field>
+    <field name="name" class="java.lang.String">
+        <fieldDescription><![CDATA[name]]></fieldDescription>
+    </field>
+    <field name="desig" class="java.lang.String">
+        <fieldDescription><![CDATA[desig]]></fieldDescription>
+    </field>
+    <field name="dept" class="java.lang.String">
+        <fieldDescription><![CDATA[dept]]></fieldDescription>
+    </field>
+    <field name="phno" class="java.lang.String">
+        <fieldDescription><![CDATA[phno]]></fieldDescription>
+    </field>
+   <field name="email" class="java.lang.String">
+        <fieldDescription><![CDATA[email]]></fieldDescription>
+   </field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="224" y="7" width="100" height="20" uuid="617f3aa3-f995-4ecb-b223-c8e32342b062"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Employee Details]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="148" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="16" width="100" height="20" uuid="d4be74f7-f07b-42d2-bc51-3b4f67eab3c2"/>
+				<text><![CDATA[Employee ID :- ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="45" width="100" height="20" uuid="f2419a4f-7d75-4085-b470-9de50401168d"/>
+				<text><![CDATA[Name :-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="80" width="100" height="20" uuid="4173801b-a421-4751-adc6-f2032abf4e69"/>
+				<text><![CDATA[Designation :-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="115" width="100" height="20" uuid="1844af48-23ea-435a-907b-d934aef527e7"/>
+				<text><![CDATA[Department :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="138" y="17" width="100" height="20" uuid="4e4614c8-65de-4fdd-8cb1-7f364783f355"/>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="47" width="100" height="20" uuid="12e856d7-6d5a-4c7b-b04b-6d5b4378dc05"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="82" width="100" height="20" uuid="28573bdd-ed7e-475b-b426-7f52b6476ade"/>
+				<textFieldExpression><![CDATA[$F{desig}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="114" width="100" height="20" uuid="3feac31a-8ddd-4ae5-adbc-6a77e3aaeaea"/>
+				<textFieldExpression><![CDATA[$F{dept}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="45" width="72" height="20" uuid="ea75bf29-1e5d-4ee3-a583-fec5edb733b9"/>
+				<text><![CDATA[Ph No:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="83" width="73" height="20" uuid="bf5fea5f-7b9e-4744-9fd9-00fdb97934da"/>
+				<text><![CDATA[Email ID :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="375" y="45" width="100" height="20" uuid="00b846b3-8da9-44db-8cc7-e10f31a1a3db"/>
+				<textFieldExpression><![CDATA[$F{phno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="80" width="100" height="20" uuid="18b909d0-8589-4f18-bb25-8a53c3958816"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

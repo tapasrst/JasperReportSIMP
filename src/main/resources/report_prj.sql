@@ -1,0 +1,10 @@
+insert into employee(`name`,desig,dept,phno,email) values('TAPAS','Developer','JAVA','9432535940','tapas_rst@rocketmail.com');
+desc employee;select * from employee;
+insert into employee(`name`,desig,dept,phno,email) values('ANIRBAN','Developer','JAVA','999999999','anirban@domain.com');
+use simp;
+insert into employee(`name`,desig,dept,phno,email) values('TAPAS','Developer','JAVA','9432535940','tapas_rst@rocketmail.com');
+insert into employee(`name`,desig,dept,phno,email) values('Indranil','Developer','JAVA','9999999999','indranil@domain.com');
+select * from employee;
+insert into employee(`name`,desig,dept,phno,email) values('ANIRBAN','Developer','JAVA','999999999','anirban@domain.com');
+delete from employee where empid=null;
+desc employee;

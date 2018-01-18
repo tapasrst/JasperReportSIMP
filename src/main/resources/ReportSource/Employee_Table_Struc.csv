@@ -1,0 +1,7 @@
+Field;Type;Null;Key;Default;Extra
+empid;int(15);NO;PRI;NULL;auto_increment
+name;varchar(50);YES;;NULL;
+desig;varchar(25);YES;;NULL;
+dept;varchar(25);YES;;NULL;
+phno;varchar(12);YES;;NULL;
+email;varchar(50);YES;;NULL;
