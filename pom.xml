@@ -42,7 +42,7 @@
   <executions>
     <execution>
       <goals>
-        <goal>java</goal>
+        <goal>java</goal> <!--  exec:java -->
       </goals>
     </execution>
   </executions>
