@@ -15,6 +15,7 @@ public class DataBean {
     private String desig;
     
     public void setEmpId(String empId){
+    	int i = 0;
         this.empId=empId;
     }
     public String getEmpId(){
